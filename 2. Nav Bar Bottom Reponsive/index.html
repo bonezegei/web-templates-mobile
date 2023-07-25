@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="nav-container">
+        <a href="#Home" class="active" onclick="contentHome()" id="nav-home">
+          <i class="fa fa-home nav-icons"></i>
+          <p class="nav-icons-caption">Home</p>
+        </a>
+
+        <a
+          href="#Devices"
+          class="none"
+          onclick="contentDevice()"
+          id="nav-device"
+        >
+          <i class="fa fa-qrcode nav-icons"></i>
+          <p class="nav-icons-caption">Devices</p>
+        </a>
+
+        <a
+          href="#Settings"
+          class="none"
+          onclick="contentSetting()"
+          id="nav-setting"
+        >
+          <i class="fa fa-cog nav-icons"></i>
+          <p class="nav-icons-caption">Settings</p>
+        </a>
+
+        <a
+          href="#profile"
+          class="none"
+          onclick="contentProfile()"
+          id="nav-profile"
+        >
+          <i class="fa fa-user-circle-o nav-icons"></i>
+          <p class="nav-icons-caption">Profile</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="content-home" id="content-home">
+      <h1 id="home">Home</h1>
+    </div>
+    <div class="content-device" id="content-device">
+      <h1>Device</h1>
+    </div>
+
+    <div class="content-setting" id="content-setting">
+      <h1>Setting</h1>
+    </div>
+
+    <div class="content-profile" id="content-profile">
+      <h1>Profile</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
